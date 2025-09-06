@@ -139,6 +139,12 @@ background: ffff;
   user-select: none;
   order: 4;
 }
+body.menu-open {
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 
 /* Popup css */
 .popup-overlay {
@@ -203,7 +209,7 @@ background: ffff;
   background: none;
   border: none;
   cursor: pointer;
-  color: #666;
+  color: #fdf6f6;
   transition: color 0.3s ease;
 }
 
@@ -240,6 +246,20 @@ background: ffff;
   font-weight: 700;
   font-size: 1.1rem;
 }
+.menu-close {
+  background: none;
+  border: none;
+  color: #f1faff;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 10px; 
+  align-self: flex-end;
+}
+.menu-close:hover {
+  color: #00e5ff;
+}
+
 
 /* Responsive */
 
@@ -324,17 +344,30 @@ background: ffff;
     padding: 8px 20px;
   }
 
-  
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    order: 4;
-    margin-right: 10px;
+   .menu-toggle {  display: block; font-size: 28px;
+    margin-right: 100px; 
+    position: relative; 
+    right: 0; 
   }
+  .navbar {
+    padding-right: 10px; 
+    overflow-x: hidden; 
+  }
+  
 }
 
 
 @media (max-width: 600px) {
+  
+  .menu-toggle {
+    margin-right: 100px;
+    position: relative;
+    right: 0;
+  }
+  .navbar {
+    padding-right: 5px;
+    overflow-x: hidden;
+  }
   .nav-left,
   .nav-right {
     width: 200px;
@@ -347,6 +380,11 @@ background: ffff;
 
   .popup-header h2 {
     font-size: 1.4rem;
+  }
+  
+  .nav-left,
+  .nav-right {
+    width: 200px;
   }
 }
 

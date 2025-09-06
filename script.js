@@ -87,10 +87,19 @@ popupOverlay.classList.remove('active');
 // Hamburger 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("nav");
+const body = document.body;
+const menuCloseBtn = document.querySelector(".menu-close");
 
 menuToggle.addEventListener("click", () => {
- nav.classList.toggle("active");
-})
+  nav.classList.toggle("active");
+  body.classList.toggle("menu-open");
+});
+
+menuCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("active");
+  body.classList.remove("menu-open");
+});
+
 // Animate hero 
 
 function animateHero(newTitle, newText, newBg) {
