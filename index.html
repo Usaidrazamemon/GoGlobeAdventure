@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+
+        <header>
+          <!-- nav bar -->
+            <nav class="navbar">
+              
+                <ul class="nav-left">
+                    <li><a href="#heroooo">Home</a></li>
+                    <li><a href="#tripssss">Trips</a></li>
+                    <li><a href="#destttyy">Destinations</a></li>
+                </ul>
+
+                
+                <div class="logo">
+                    <img src="images/LOGO.png" alt="Travel Logo" />
+                </div>
+
+                
+                <ul class="nav-right">
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#boook">Book Now</a></li>
+                    <li><button class="btn primary" id="signUpBtn">Sign Up</button></li>
+                    <li><button class="btn secondary" id="loginBtn">Login</button></li>
+                </ul>
+
+                
+                <div class="menu-toggle">☰</div>
+            </nav>
+
+            <!-- Popup  -->
+            <div id="popupOverlay" class="popup-overlay"></div>
+
+            
+            <div id="signUpPopup" class="popup">
+                <div class="popup-header">
+                    <h2>Sign Up</h2>
+                    <button class="close-btn" id="closeSignUp">&times;</button>
+                </div>
+                <form class="popup-form">
+                    <input type="text" placeholder="Username" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <button type="submit" class="btn primary">Register</button>
+                </form>
+            </div>
+
+            
+            <div id="loginPopup" class="popup">
+                <div class="popup-header">
+                    <h2>Login</h2>
+                    <button class="close-btn" id="closeLogin">&times;</button>
+                </div>
+                <form class="popup-form">
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <button type="submit" class="btn secondary">Login</button>
+                </form>
+            </div>
+        </header>
+        <!-- hero section start hua h -->
+        <section class="hero" id="heroooo">
+            <div class="hero-content">
+                <h1 id="hero-heading">Start Your Travel Journey</h1>
+                <p id="hero-description">
+                    Choose a destination below to explore amazing experiences
+                </p>
+                <button id="hero-btn" class="btn primary">Start Journey</button>
+            </div>
+
+            <div class="thumbnails">
+                <div class="thumb">
+                    <img src="images/makkah.webp" data-title="Journey to Makkah & Madina"
+                        data-text="Experience the spiritual peace of Makkah and Madina, the holy cities that inspire millions around the world."
+                        data-bg="images/makkah.webp">
+                </div>
+                <div class="thumb">
+                    <img src="images/mountain.webp" data-title="Climb the Majestic Mountains"
+                        data-text="Experience breathtaking peaks, fresh air, and the thrill of hiking."
+                        data-bg="images/mountain.webp">
+                </div>
+                <div class="thumb">
+                    <img src="images/desert.webp" data-title="Discover the Endless Desert"
+                        data-text="Explore golden dunes, magical sunsets, and the silence of nature."
+                        data-bg="images/desert.webp">
+                </div>
+                <div class="thumb">
+                    <img src="images/island.webp" data-title="Escape to a Remote Island"
+                        data-text="Relax under palm trees, swim in crystal-clear waters, and find true peace."
+                        data-bg="images/island.webp">
+                </div>
+
+        </section>
+        <!-- Destinations Section -->
+
+       
+
+<section class="destinations" id="destttyy">
+  <h2 class="section-heading" id="travel-heading">
+    Explore Top Destinations ✈️
+  </h2>
+
+  <div class="cards">
+    
+    <div class="card">
+      <div class="circle"><img src="images/tokyo.jpeg" alt="Tokyo"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Tokyo</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/koyoto.jpeg" alt="Kyoto"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Kyoto</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/nagasaki.jpeg" alt="Nagasaki"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Nagasaki</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/yokohama.jpeg" alt="Yokohama"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Yokohama</p>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="circle"><img src="images/paris.jpeg" alt="Paris"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Paris</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/london.jpeg" alt="London"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>London</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/rome.jpeg" alt="Rome"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Rome</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circle"><img src="images/dubai.jpeg" alt="Dubai"></div>
+      <div class="title">
+        <span class="arrow">⬆</span>
+        <p>Dubai</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our trips section -->
+<section class="our-trips" id="tripssss">
+  
+  <h2 class="section-heading">🌏 Our Best Trips</h2>
+
+  
+  <div class="features-top">
+    <div class="feature">
+      <div class="icon-3d sports"><i class="fas fa-basketball-ball"></i></div>
+      <p>Sports</p>
+    </div>
+    <div class="feature">
+      <div class="icon-3d culture"><i class="fas fa-landmark"></i></div>
+      <p>Culture</p>
+    </div>
+    <div class="feature">
+      <div class="icon-3d beach"><i class="fas fa-umbrella-beach"></i></div>
+      <p>Beaches</p>
+    </div>
+    <div class="feature">
+      <div class="icon-3d adventure"><i class="fas fa-hiking"></i></div>
+      <p>Adventure</p>
+    </div>
+    <div class="feature">
+      <div class="icon-3d food"><i class="fas fa-utensils"></i></div>
+      <p>Food</p>
+    </div>
+    <div class="feature">
+      <div class="icon-3d nightlife"><i class="fas fa-glass-cheers"></i></div>
+      <p>Nightlife</p>
+    </div>
+  </div>
+
+  
+  <div class="trip-description">
+    <div class="desc-left">
+      <h3>Unforgettable Experiences</h3>
+      <p>
+        From breathtaking mountains to vibrant cities, every trip is crafted 
+        to give you an experience of a lifetime. Discover hidden gems, 
+        explore diverse cultures, and make memories that stay forever.
+      </p>
+    </div>
+    <div class="desc-right">
+      <h3>Why Choose Us?</h3>
+      <p>
+        Our curated trips are designed with passion and expertise. Whether 
+        it’s adventure, relaxation, or cultural immersion, we bring you 
+        the best of every destination with comfort and style.
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="trip-collage">
+    <img src="images/tokyo.jpeg" alt="Tokyo">
+    <img src="images/paris.jpeg" alt="Paris">
+    <img src="images/rome.jpeg" alt="Rome">
+    <img src="images/dubai.jpeg" alt="Dubai">
+    <img src="images/london.jpeg" alt="London">
+  </div>
+</section>
+
+
+        
+         
+<!-- BLOG SECTION -->
+<section class="blogs-section" id="blogs">
+  <h2 class="blogs-header">Goglobe Adventure Blogs</h2>
+  <div class="blogs-grid">
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Ziplining Adventure" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Ziplining Through the Canopy</h3>
+        <p class="blog-description">Soar above lush forests on thrilling ziplines, capturing breathtaking views and unforgettable moments.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Forest Trail Hike" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Hiking Hidden Trails</h3>
+        <p class="blog-description">Explore secret forest paths enriched with wildlife and peaceful natural beauty for adventurers.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Family Nature Day" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Family Fun in Nature</h3>
+        <p class="blog-description">Create magical family memories with fun group activities and cozy campfire storytelling sessions.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Ziplining Portrait" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Thrilling Zipline Portraits</h3>
+        <p class="blog-description">Capture your adventure moment with stunning zipline action shots nestled in nature’s beauty.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1446034295857-c39f8844fad4?auto=format&fit=crop&w=600&q=80" alt="Camping Adventure" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Camping Under the Stars</h3>
+        <p class="blog-description">Experience peaceful nights beneath the stars with friends and family around the campfire.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=600&q=80" alt="River Kayaking" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">River Kayaking Adventures</h3>
+        <p class="blog-description">Navigate serene rivers and unlock thrilling adventures while kayaking in nature’s calm waters.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Mountain Hiking" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Conquering Mountain Trails</h3>
+        <p class="blog-description">Challenge yourself with breathtaking mountain hikes and panoramic summit views.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1425321395722-b1dd54a97cf3?auto=format&fit=crop&w=600&q=80" alt="Wildlife Exploration" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Wildlife Exploration</h3>
+        <p class="blog-description">Discover local flora and fauna on guided tours that bring you close to nature’s wonders.</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </article>
+     </div>
+</section>
+<!-- iconic secttion -->
+<section class="iconic-section">
+  <div class="iconic-row">
+    <div class="iconic-left collage">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Iconic Place 1" />
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Iconic Place 2" />
+    </div>
+    <div class="iconic-right text-block">
+      <h2>Iconic Places You Need to See</h2>
+      <p>Discover the most breathtaking spots that every traveler dreams of visiting. Experience the magic and mystery wrapped in every corner of these iconic destinations.</p>
+    </div>
+  </div>
+
+  <div class="iconic-row reverse">
+    <div class="iconic-left text-block">
+      <h2>More Must-See Destinations</h2>
+      <p>Explore hidden gems and memorable landscapes that enrich your adventure. These places promise unforgettable moments and stunning views.</p>
+    </div>
+    <div class="iconic-right collage">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Iconic Place 3" />
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Iconic Place 4" />
+    </div>
+  </div>
+</section>
+<!-- Review section -->
+
+<section class="reviews-section">
+  <div class="container">
+    <h2 class="section-title-reviews">Customer Reviews - Goglobeladventure</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+
+        
+        <div class="carousel-slide">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah K." class="reviewer-photo" />
+            <p>"Amazing trip, loved every moment!"</p>
+            <h4>- Sarah K.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Omar A." class="reviewer-photo" />
+            <p>"Great customer service and beautiful locations."</p>
+            <h4>- Omar A.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Priya M." class="reviewer-photo" />
+            <p>"A seamless booking experience and unforgettable adventure."</p>
+            <h4>- Priya M.</h4>
+          </div>
+        </div>
+
+        
+        <div class="carousel-slide">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Ahmed R." class="reviewer-photo" />
+            <p>"The guides were knowledgeable and friendly."</p>
+            <h4>- Ahmed R.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lina W." class="reviewer-photo" />
+            <p>"Highly recommend goglobeladventure for thrill seekers."</p>
+            <h4>- Lina W.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="Jason T." class="reviewer-photo" />
+            <p>"Loved the group dynamics and safety measures."</p>
+            <h4>- Jason T.</h4>
+          </div>
+        </div>
+
+        
+        <div class="carousel-slide">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Maria L." class="reviewer-photo" />
+            <p>"Best travel experience of my life!"</p>
+            <h4>- Maria L.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Hassan F." class="reviewer-photo" />
+            <p>"Affordable prices with premium service."</p>
+            <h4>- Hassan F.</h4>
+          </div>
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/78.jpg" alt="Anjali D." class="reviewer-photo" />
+            <p>"Memorable adventure with excellent support."</p>
+            <h4>- Anjali D.</h4>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </div>
+</section>
+<!-- small device reviews-section -->
+ <div class="reviews-simple">
+  <div class="review-card">
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah K." class="reviewer-photo" />
+    <p>"Amazing trip, loved every moment!"</p>
+    <h4>- Sarah K.</h4>
+  </div>
+  <div class="review-card">
+    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Omar A." class="reviewer-photo" />
+    <p>"Great customer service and beautiful locations."</p>
+    <h4>- Omar A.</h4>
+  </div>
+  <div class="review-card">
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Priya M." class="reviewer-photo" />
+    <p>"A seamless booking experience and unforgettable adventure."</p>
+    <h4>- Priya M.</h4>
+  </div>
+</div>
+ <!-- package section -->
+ <section class="packages-section">
+  <div class="container">
+    <h2 class="section-title">Explore Our Popular Packages</h2>
+    <div class="packages-grid">
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60" alt="Beach Vacations" />
+        <h3>Beach Vacations</h3>
+        <p>18 Tours+</p>
+      </div>
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=500&q=60" alt="City Tours" />
+        <h3>City Tours</h3>
+        <p>12 Tours+</p>
+      </div>
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=60" alt="Mountain Hiking" />
+        <h3>Mountain Hiking</h3>
+        <p>25 Tours+</p>
+      </div>
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=60" alt="Desert Safaris" />
+        <h3>Desert Safaris</h3>
+        <p>10 Tours+</p>
+      </div>
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=60" alt="Wildlife Tours" />
+        <h3>Wildlife Tours</h3>
+        <p>8 Tours+</p>
+      </div>
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=500&q=60" alt="Cultural Trips" />
+        <h3>Cultural Trips</h3>
+        <p>15 Tours+</p>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- book now section -->
+ <section class="book-now-section" id="boook">
+  <div class="container">
+    <div class="book-grid">
+      <div class="book-image">
+        <img src="images/book now.jpeg" alt="Travel Illustration" />
+      </div>
+      <form class="book-form">
+        <h2>Book Now</h2>
+        <label for="where-to">Where To</label>
+        <input type="text" id="where-to" name="where-to" placeholder="Search places" required />
+
+        <label for="guests">How Many</label>
+        <input type="number" id="guests" name="guests" placeholder="Number of guests" min="1" required />
+
+        <label for="arrivals">Arrivals</label>
+        <input type="date" id="arrivals" name="arrivals" required />
+
+        <label for="leaving">Leaving</label>
+        <input type="date" id="leaving" name="leaving" required />
+
+        <button type="submit" class="submit-btn">Book Now</button>
+      </form>
+    </div>
+  </div>
+</section> 
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>"We believe every journey is more than just travel — it’s a story waiting to be lived. Discover breathtaking destinations, unique cultures, and unforgettable experiences with us.".</p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Branch Locations</h3>
+      <ul>
+        <li>India</li>
+        <li>USA</li>
+        <li>Japan</li>
+        <li>France</li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Created By <span>SakinaMemon</span> | All Rights Reserved © 2025</p>
+  </div>
+</footer>
+        
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+        
+        <script src="script.js"></script>
+</body>
+
+</html>
